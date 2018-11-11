@@ -1,3 +1,23 @@
+## Flashcards
+
+## Lab 3
+
+### App Description
+The user can now create and save new flashcards to their deck and browse/study multiple flashcards.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/WPaM1Upezh.gif" width=200><br>     <img src="http://g.recordit.co/nzksHndvDO.gif" width=200><br>
+
+## Required
+- [X] User can browse through multiple flashcards
+- [X] User can re-open the app and see previously created flashcards
+- [X] Push code to GitHub
+## Optional
+- [ ] User can delete a flashcard
+- [ ] User can edit existing flashcard
+- [ ] User can store multiple choice questions
+
 ## Lab 2
 
 ### App Description
@@ -17,7 +37,7 @@ You can create your own flashcard by inputing a question and an answer.
 - [ ] User can edit existing flashcard
 - [ ] User can add multiple choice answers in the creation screen
 
-## Flashcards
+## Lab 1
 
 ### App Description: A question flashcard pops up on the screen and to get the correct answer, you tap on the screen.
 
@@ -33,6 +53,6 @@ You can create your own flashcard by inputing a question and an answer.
 - [X] Build in logic to show the answer side when the card is tapped
 - [X] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
+- [X] Toggle the flashcard between the question side and the answer side
 - [X] Style the question and answer side of the card to better distinguish between the two sides
 - [ ] Add selectable multiple choice answers beneath the card

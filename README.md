@@ -7,7 +7,7 @@ The user can now create and save new flashcards to their deck and browse/study m
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/WPaM1Upezh.gif" width=200><br>     <img src="http://g.recordit.co/nzksHndvDO.gif" width=200><br>
+<img src="http://g.recordit.co/WPaM1Upezh.gif" width=200/> <img src="http://g.recordit.co/nzksHndvDO.gif" width=200/>
 
 ## Required
 - [X] User can browse through multiple flashcards

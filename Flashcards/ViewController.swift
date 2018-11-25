@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var backLabel: UILabel!
     @IBOutlet weak var frontLabel: UILabel!
     
-
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var card: UIView!
     
     // Array to hold our flashcards
     var flashcards = [Flashcard]()
@@ -50,11 +50,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
-        
+        flipFlashcard()
+    }
+    
+    func flipFlashcard() {
         if frontLabel.isHidden == true {
-            frontLabel.isHidden = false
+            UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {self.frontLabel.isHidden = false})
         } else {
-            frontLabel.isHidden = true
+            UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {self.frontLabel.isHidden = true})
+        }
+        
+    }
+    
+    func animateCardOut() {
+        UIView.animate(withDuration: 0.3, animations: {self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)}, completion: { finished in
+            self.updateLabels()
+            self.animateCardIn()
+        })
+    }
+    
+    func animateCardIn() {
+        // Start on right side
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
+        // Animate card going back to OG position
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
         }
     }
     

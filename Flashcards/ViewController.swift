@@ -79,13 +79,30 @@ class ViewController: UIViewController {
         }
     }
     
+    func animateCardOutp() {
+        UIView.animate(withDuration: 0.3, animations: {self.card.transform = CGAffineTransform.identity.translatedBy(x: 600.0, y: 0.0)}, completion: { finished in
+            self.updateLabels()
+            self.animateCardInp()
+        })
+    }
+    
+    func animateCardInp() {
+        // Start on right side
+        card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        
+        // Animate card going back to OG position
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
+        }
+    }
+    
     @IBAction func didTapOnPrev(_ sender: Any) {
         
         // Decrease current index
         currentIndex -= 1
         
-        // Update labels
-        updateLabels()
+        // Animate
+        animateCardOutp()
         
         // Update buttons
         updateNextPrevButtons()
@@ -96,8 +113,8 @@ class ViewController: UIViewController {
         // Increase current index
         currentIndex += 1
         
-        // Update labels
-        updateLabels()
+        // animate
+        animateCardOut()
         
         // Update buttons
         updateNextPrevButtons()

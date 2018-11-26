@@ -1,5 +1,28 @@
 ## Flashcards
 
+
+## Lab 4
+
+### App Description
+NEW: New app icon and logo is shown when you open up the app. New buttons (previous, next, add) and card animates when flipped or moving between cards.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/2s5a2RZJRS.gif" width=200><br>
+
+## Required
+- [X] User should see the app icon 
+- [X] User should see a splash screen
+- [X] User should see an flip animation when revealing the answer
+- [X] User should see a slide animation when going to the next flashcard
+- [X] User should see a slide animation when going to the previous flashcard
+- [X] Push code to GitHub
+## Optional
+- [ ] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [ ] Correct answer in multiple choice should be random
+
+------------------------------------------------------------------------------------------------------------------------------
 ## Lab 3
 
 ### App Description
@@ -18,6 +41,7 @@ The user can now create and save new flashcards to their deck and browse/study m
 - [ ] User can edit existing flashcard
 - [ ] User can store multiple choice questions
 
+------------------------------------------------------------------------------------------------------------------------------
 ## Lab 2
 
 ### App Description
@@ -37,6 +61,7 @@ You can create your own flashcard by inputing a question and an answer.
 - [ ] User can edit existing flashcard
 - [ ] User can add multiple choice answers in the creation screen
 
+------------------------------------------------------------------------------------------------------------------------------
 ## Lab 1
 
 ### App Description: A question flashcard pops up on the screen and to get the correct answer, you tap on the screen.
